@@ -1,0 +1,29 @@
+
+<svg version="1" xmlns="http://www.w3.org/2000/svg" width="800" viewBox="0 0 100 200">
+	<style>
+  .axis {
+    stroke: #555;
+    stroke-width: .2;
+  }
+  .scale {
+    fill: #f0f0f0;
+    stroke: #999;
+    stroke-width: .2;
+  }
+  .shape {
+    fill-opacity: .5;
+    stroke-width: .5;
+  }
+	.shape:hover {
+			fill-opacity: .6;
+    }
+    .shape.ideal{
+      fill:#00a0b0;
+      stroke:#00a0b0;
+    }
+  .shape.current{
+    fill:#cc333f;
+  }
+	</style>
+	<g transform="translate(50.0000,50.0000)"><g><circle class="scale" fill="none" r="41.66666666666667"></circle><circle class="scale" fill="none" r="27.77777777777778"></circle><circle class="scale" fill="none" r="13.88888888888889"></circle></g><g><polyline class="axis" points="0.0000,0.0000 0.0000,-41.6667"></polyline><polyline class="axis" points="0.0000,0.0000 32.5763,-25.9787"></polyline><polyline class="axis" points="0.0000,0.0000 40.6220,9.2717"></polyline><polyline class="axis" points="0.0000,0.0000 18.0785,37.5404"></polyline><polyline class="axis" points="0.0000,0.0000 -18.0785,37.5404"></polyline><polyline class="axis" points="0.0000,0.0000 -40.6220,9.2717"></polyline><polyline class="axis" points="0.0000,0.0000 -32.5763,-25.9787"></polyline></g><g><path class="shape ideal" d="M32.576311769501245,-25.978741744113897C35.2844448588952,-22.582850260901914,41.588517850216185,5.037098165509899,40.62199634090932,9.271705581513102C39.655474831602454,13.506312997516304,21.991854827952096,35.655791901639404,18.07848912989826,37.54036949593414C14.165123431844421,39.42494709022887,-14.165123431844417,39.42494709022887,-18.078489129898255,37.54036949593414C-21.991854827952093,35.655791901639404,-39.655474831602454,13.506312997516307,-40.62199634090932,9.271705581513105C-41.588517850216185,5.037098165509903,-35.284444858895206,-22.582850260901907,-32.57631176950125,-25.978741744113893C-29.8681786801073,-29.37463322732588,-4.343508235933497,-41.66666666666667,2.551347498223653e-15,-41.66666666666667C4.343508235933502,-41.66666666666667,29.86817868010729,-29.37463322732588,32.576311769501245,-25.978741744113897"></path><path class="shape current" d="M6.5152623539002485,-5.19574834882278C7.056888971779039,-4.516570052180382,8.317703570043237,1.0074196331019796,8.124399268181865,1.85434111630262C7.931094966320492,2.70126259950326,4.39837096559042,7.1311583803278795,3.6156978259796517,7.508073899186827C2.833024686368884,7.884989418045774,-2.833024686368883,7.884989418045774,-3.615697825979651,7.508073899186827C-4.398370965590418,7.1311583803278795,-7.931094966320491,2.7012625995032615,-8.124399268181865,1.854341116302621C-8.317703570043237,1.0074196331019807,-7.05688897177904,-4.5165700521803815,-6.515262353900249,-5.195748348822779C-5.973635736021459,-5.874926645465176,-0.8687016471866994,-8.333333333333334,5.102694996447306e-16,-8.333333333333334C0.8687016471867005,-8.333333333333334,5.973635736021458,-5.874926645465177,6.5152623539002485,-5.19574834882278"></path></g><g><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="0.0000" y="-47.5000" dy="1.5">Privacy/Data Protection Notices &amp; Policies</text><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="37.1370" y="-29.6158" dy="1.5">Staff Data Protection</text><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="46.3091" y="10.5697" dy="1.5">Risk Assessment</text><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="20.6095" y="42.7960" dy="1.5">Data Protection Officer</text><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="-20.6095" y="42.7960" dy="1.5">Security</text><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="-46.3091" y="10.5697" dy="1.5">Governance</text><text class="caption" text-anchor="middle" font-size="3" font-family="sans-serif" x="-37.1370" y="-29.6158" dy="1.5">Compliance</text></g></g>
+</svg>
