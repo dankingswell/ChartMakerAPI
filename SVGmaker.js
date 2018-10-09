@@ -62,7 +62,9 @@ const svg = `
 </svg>
 `
 //var x  = process.stdout.write(svg)
-fs.writeFile("chart.svg",svg)
+fs.writeFile("chart.svg",svg, (err)=>{
+  console.log(err)
+})
 
 }
 module.exports= SVGMaker
