@@ -2,7 +2,7 @@ const express = require("express");
 const Path = require("path");
 const app = express();
 const publicPath = Path.join(__dirname,"..","public")
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 const SvgMaker= require("./SVGmaker")
 const PNGMaker = require("./ToPNG")
 
