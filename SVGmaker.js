@@ -1,8 +1,11 @@
 function SVGMaker(arrayOfValues){
-
+  console.log(arrayOfValues);
+  
   for(var i = 0 ;  i < arrayOfValues.length; i ++){
     arrayOfValues[i] = (arrayOfValues[i]*2)/10
   }
+
+  console.log(arrayOfValues);
 const radar = require('svg-radar-chart')
 const stringify = require('virtual-dom-stringify')
 const smoothing = require('svg-radar-chart/smoothing')
@@ -63,7 +66,7 @@ const svg = `
 `
 //var x  = process.stdout.write(svg)
 fs.writeFile("chart.svg",svg, (err)=>{
-  console.log(err)
+  console.log("FS Error")
 })
 
 }

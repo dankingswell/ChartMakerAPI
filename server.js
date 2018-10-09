@@ -12,13 +12,18 @@ app.use(express.static(publicPath));
 
 
 app.get("*", (req,res) => {
+    if(req.query.length < 7){
+        console.log(req.query)
+    }
+
     const data = req.query;
 var valuesGiven= []
 for (x in data){
-    valuesGiven.push(data[x])
+    console.log(x)
+    valuesGiven.push(Number(data[x]))
 }
-SvgMaker(valuesGiven)
-PNGMaker().then(()=>{
+    SvgMaker(valuesGiven)
+    PNGMaker().then(()=>{
 
     res.set("Content-Type",'image/jpeg')
     res.sendFile(Path.join(__dirname,"/chart.jpeg"))
