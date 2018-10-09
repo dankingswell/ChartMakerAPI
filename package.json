@@ -13,8 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node server.js",
-    "heroku-postbuild": "npm run start"
+    "start": "node server.js"
   },
   "author": "Dan Kingswell",
   "license": "ISC"
