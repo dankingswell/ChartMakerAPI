@@ -19,7 +19,6 @@ app.get("*", (req,res) => {
     const data = req.query;
 var valuesGiven= []
 for (x in data){
-    console.log(x)
     valuesGiven.push(Number(data[x]))
 }
     SvgMaker(valuesGiven)

@@ -1,6 +1,4 @@
 function SVGMaker(arrayOfValues){
-  console.log(arrayOfValues);
-  
   for(var i = 0 ;  i < arrayOfValues.length; i ++){
     arrayOfValues[i] = (arrayOfValues[i]*2)/10
   }
