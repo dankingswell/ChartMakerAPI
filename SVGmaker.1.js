@@ -4,8 +4,8 @@ function SVGMaker(arrayOfValues){
   for(var i = 0 ;  i < arrayOfValues.length; i ++){
 
     // incase of incorrect values force max value
-    if (arrayOfValues[i] > 10){
-      arrayOfValues[i] = (10*2)/10;
+    if (arrayOfValues[i] > 5){
+      arrayOfValues[i] = (5*2)/10;
     }
     else arrayOfValues[i] = (arrayOfValues[i]*2)/10;
   }
@@ -18,27 +18,24 @@ var fs = require('fs');
 
 const chart = radar({
 	// columns
-	Policies:`Privacy/Data Protection Notices & Policies`,
-  Protection: 'Staff Data Protection',
-  Risk_Assessment:"Risk Assessment",
-  Data_Protection_Officer:"Data Protection Officer",
-  Security:"Security",
-  Governance: 'Governance',
-  Compliance: 'Compliance'
+	Field1:`Field 1`,
+  Field2: 'Field',
+  Field3:"Field",
+  Field4:"Field",
+  Field5:"Field",
+  Field6: 'Field',
+  Field7: 'Field'
 }, [
   // data
-  {class: 'ideal', Governance:1, Compliance: 1, Protection:  1,  Risk_Assessment:1,Policies: 1, Security:1, Data_Protection_Officer:1},
-  {class: 'current',Governance:arrayOfValues[0], Compliance: arrayOfValues[1], Protection:  arrayOfValues[2], Policies: arrayOfValues[3],Risk_Assessment:arrayOfValues[4], Security:arrayOfValues[5], Data_Protection_Officer:arrayOfValues[6]},
-  
-
-
+  {class: 'ideal', Field1:1, Field2: 1, Field3:  1,  Field4:1,Field5: 1, Field6:1, Field7:1},
+  {class: 'current',Field1:arrayOfValues[0], Field2: arrayOfValues[1], Field3:arrayOfValues[2], Field4: arrayOfValues[3],Field5:arrayOfValues[4], Field6:arrayOfValues[5], Field7:arrayOfValues[6]}
 ],{
 shapeProps: (data) => ({className: 'shape ' + data.class}),
 smoothing:smoothing(.6)}
 )
 
 
-
+// stylign graph, view box == final dimensions
 const svg = `
 <svg version="1" xmlns="http://www.w3.org/2000/svg" width="1000" viewBox="-50 -10 200 130">
 	<style>
@@ -69,9 +66,8 @@ const svg = `
 	${stringify(chart)}
 </svg>
 `
-//var x  = process.stdout.write(svg)
-fs.writeFile("chart.svg",svg, (err)=>{
-  console.log("FS Error")
+// create SVG
+fs.writeFile("chart.svg",svg,(err)=>{
 })
 
 }
